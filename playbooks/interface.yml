@@ -2,7 +2,7 @@
 
 ---
 # For hosts: refer to the inventory file for an appropriate entry that would encompass DC2's leafs and spines
-- hosts: spine1-DC2, spine2-DC2, spine3-DC2, leaf1-DC2, leaf2-DC2, leaf3-DC2, leaf4-DC2, borderleaf1-DC2, borderleaf2-DC2
+- hosts: all
   gather_facts: no
   tasks:
   - name: Register variables (candidates- Do not change this)
