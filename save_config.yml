@@ -1,0 +1,6 @@
+- hosts: cirrus
+  tasks:
+  - name: save config
+    eos_command: 
+      commands: 
+        - wr
