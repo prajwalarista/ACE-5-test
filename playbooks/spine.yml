@@ -1,7 +1,7 @@
 # This playbook is to be used to generate spine MP-BGP config with variables from underlay.yml
 
 ---
-- hosts: spines_DC2
+- hosts: spines_dc2
   gather_facts: no
   tasks:
   - name: Register variables (candidates- Do not change this)
