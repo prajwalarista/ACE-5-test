@@ -6,6 +6,6 @@ interface {{interface}}
 no switchport
 {%endif%}
 #}
-ip address {{underlay[inventory_hostname]["interfaces"][interface]["ipv4"]}}/{{underlay[inventory_hostname]["interfaces"][interface]["mask"]}}
+ip address {{underlay[inventory_hostname]["interfaces"][interface][ipv4]}}/{{underlay[inventory_hostname]["interfaces"][interface]["mask"]}}
 
 {%endfor%}
